@@ -1,9 +1,13 @@
 ---
-const { class: className, icon, title, text } = Astro.props;
+const { class: bg, icon, title, text } = Astro.props;
+
+const bgClass = `bg-${bg}-500`;
 ---
 
 <div class="font-sans">
-  <iconify-icon class="iconify w-7 h-7 flex items-center justify-center text-3xl mb-2" :class={className} icon={icon}></iconify-icon>
-  <h4 class="font-light text-lg mb-2 text-muted-800 dark:text-muted-100">{title}</h4>
+  <div class={`inline-block w-10 h-10 p-2 ${bgClass} rounded-lg`}>
+    <img class="iconify w-7 h-7 flex items-center justify-center text-3xl mb-2" src=`/img/menus/${icon}.svg`/>
+  </div>
+  <h4 class="text-lg mb-2 text-muted-800 dark:text-muted-100">{title}</h4>
   <p class="text-sm text-muted-500 dark:text-muted-400">{text}</p>
 </div>

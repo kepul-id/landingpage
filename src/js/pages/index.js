@@ -1,6 +1,6 @@
 import { homeSpy } from "./scrollspy";
-import { doctors } from "./doctors";
+import { goods } from "./goods";
 
 window.homeSpy = homeSpy
-window.doctors = doctors;
+window.goods = goods;
 
