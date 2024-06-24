@@ -1,0 +1,67 @@
+---
+import Layout from "@layouts/Default.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Container from "@components/section/Container.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import { Markdown } from '@astropub/md'
+
+const { slug } = Astro.params;
+
+const response = await fetch(`http://127.0.0.1:8000/api/post/${slug}`);
+const news = await response.json();
+---
+
+<Layout title="News">
+    <div x-intersect="activeStep = 'spy-3'">
+      <SectionMuted>
+          <Container>
+              <br/><br/><br/><br/>
+            <img
+                class="object-cover bottom-0 inset-x-0 w-full h-60 rounded-lg"
+                src={`http://127.0.0.1:8000/storage/${news.thumbnail}`}
+                alt={news.slug}
+            />
+            <br/><br/>
+          <SectionTitle
+              title={ news.title }
+              subtitle="Baca berita update dari kami."
+              minititle=""
+              class="'mx-auto text-center'"
+          />
+          <br/><br/>
+          <Markdown of={ news.content } />
+          <!-- <div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
+            {
+              result
+                .filter((news) => news.published)
+                .map((news) => (
+                  <a href={`/news/${news.slug}`}>
+                    <Card class="'p-4'">
+                      <div class="relative w-full h-60 rounded-lg bg-muted-200 dark:bg-muted-800">
+                        <img
+                          class="object-cover bottom-0 inset-x-0 w-full h-60 rounded-lg"
+                          src={`http://127.0.0.1:8000/storage/${news.thumbnail}`}
+                          alt={news.slug}
+                        />
+                      </div>
+                      <div class="font-sans mt-3">
+                        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+                          {news.title}
+                        </h4>
+                        <p class="text-sm text-muted-400">{ parseTag(news.tags) }</p>
+                      </div>
+                      <div class="flex items-center justify-between font-sans mt-3">
+                        <div class="flex items-center justify-end gap-2">
+                          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400">{news.category_id}</span>
+                        </div>
+                      </div>
+                    </Card>
+                  </a>
+                )
+              )
+            }
+          </div> -->
+          </Container>
+      </SectionMuted>
+    </div>
+  </Layout>
