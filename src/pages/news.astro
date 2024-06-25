@@ -1,0 +1,25 @@
+---
+import Layout from "@layouts/Default.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Container from "@components/section/Container.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import Testimonials from "@components/content/Testimonials.astro";
+
+---
+
+<Layout title="News">
+  <div x-intersect="activeStep = 'spy-3'">
+    <SectionMuted>
+        <Container>
+            <br/><br/><br/><br/>
+        <SectionTitle
+            title="Kegiatan Kepul Terkini"
+            subtitle="Baca berita update dari kami."
+            minititle="NEWS"
+            class="'mx-auto text-center'"
+        />
+        <Testimonials />
+        </Container>
+    </SectionMuted>
+  </div>
+</Layout>
