@@ -8,8 +8,6 @@ import SectionTitle from "@components/section/SectionTitle.astro";
 import IconBlock from "@components/content/IconBlock.astro";
 import Toolbar from "@components/content/doctors/grid/Toolbar.astro";
 import Grid from "@components/content/doctors/grid/Grid.astro";
-import SideStatsRight from "@components/content/features/SideStatsRight.astro";
-import SideStatsLeft from "@components/content/features/SideStatsLeft.astro";
 import Cta from "@components/content/Cta.astro";
 import Testimonials from "@components/content/Testimonials.astro";
 
@@ -117,14 +115,14 @@ const features = [
       <div class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
         <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div class="relative space-y-8 py-12 p-8">
-            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512" height="512" alt="burger illustration">
+            <img src="https://cdn3.iconfinder.com/data/icons/okku-delivery/32/Delivery_Okku_Expand-07-128.png" class="w-12" width="512" height="512" alt="burger illustration">
   
             <div class="space-y-2">
               <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                First feature
+                Pilah-memilah
               </h5>
               <p class="text-gray-600 dark:text-gray-300">
-                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                Sebelum kamu menjual sampah daur ulang, pastikan sampahnya sudah dipilah, ya!
               </p>
             </div>
             <a href="#" class="flex items-center justify-between group-hover:text-secondary">
@@ -137,14 +135,14 @@ const features = [
         </div>
         <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div class="relative space-y-8 py-12 p-8">
-            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512" height="512" alt="burger illustration">
+            <img src="https://cdn3.iconfinder.com/data/icons/okku-delivery/32/Delivery_Okku_Expand-34-128.png" class="w-12" width="512" height="512" alt="burger illustration">
   
             <div class="space-y-2">
               <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                Second feature
+                Unggah Sampah
               </h5>
               <p class="text-gray-600 dark:text-gray-300">
-                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                Buka aplikasi kepul, foto dan isi informasi sampah daur ulang yang kamu jual!
               </p>
             </div>
             <a href="#" class="flex items-center justify-between group-hover:text-secondary">
@@ -157,14 +155,14 @@ const features = [
         </div>
         <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div class="relative space-y-8 py-12 p-8">
-            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" class="w-12" width="512" height="512" alt="burger illustration">
+            <img src="https://cdn3.iconfinder.com/data/icons/okku-delivery/32/Delivery_Okku_Expand-27-128.png" class="w-12" width="512" height="512" alt="burger illustration">
   
             <div class="space-y-2">
               <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                Third feature
+                Dijemput driver
               </h5>
               <p class="text-gray-600 dark:text-gray-300">
-                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                Setelah kamu unggah di aplikasi Kepul, Driver kami siap menjemput dirumah!
               </p>
             </div>
             <a href="#" class="flex items-center justify-between group-hover:text-secondary">
@@ -177,14 +175,14 @@ const features = [
         </div>
         <div class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
           <div class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
-            <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" class="w-12" width="512" height="512" alt="burger illustration">
+            <img src="https://cdn3.iconfinder.com/data/icons/okku-delivery/32/Delivery_Okku_Expand-13-128.png" class="w-12" width="512" height="512" alt="burger illustration">
   
             <div class="space-y-2">
               <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
-                More features
+                Peroleh Uangnya
               </h5>
               <p class="text-gray-600 dark:text-gray-300">
-                Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                Setelah proses transaksi berhasil, uang akan kami transfer langsung ke rekening kamu.
               </p>
             </div>
             <a href="#" class="flex items-center justify-between group-hover:text-secondary">
@@ -219,25 +217,32 @@ const features = [
 
   <SectionMuted>
     <Container>
-      <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+      <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5">
         <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="https://astrolus.netlify.app/images/clients/microsoft.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="">
+          <a href="https://narasi.tv/read/narasi-daily/berdayakan-pengepul-sampah-kepul-juarai-innovation-pitching-competition-nu-tech-2022" target="_blank">
+            <img src="https://static.wikia.nocookie.net/logopedia/images/4/42/Narasi_%282018%29.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="">
+          </a>
           </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-          <img src="https://astrolus.netlify.app/images/clients/airbnb.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="">
-        </div>
         <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-          <img src="https://astrolus.netlify.app/images/clients/google.svg" class="h-9 w-auto m-auto" loading="lazy" alt="client logo" width="" height="">
+          <a href="https://sumut.idntimes.com/tech/trend/masdalena-napitupulu-1/startup-kepul-ciptaan-anak-medan-ajak-warga-olah-sampah-jadi-duit" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IDN_Media.svg/800px-IDN_Media.svg.png" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="">
+          </a>
         </div>
         <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="https://astrolus.netlify.app/images/clients/ge.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="">
+          <a href="https://www.detik.com/sumut/bisnis/d-6287851/deretan-startup-keren-asal-medan-ada-yang-go-internasional" target="_blank" rel="noopener noreferrer">
+            <img src="https://id.seedbacklink.com/wp-content/uploads/2022/07/detik-logo.png" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="">
+          </a>
+        </div>
+        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+          <a href="https://www.kompas.id/baca/sosok/2022/04/18/latif-menguangkan-sampah-mengatasi-masalah-kota" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Kompas.svg/800px-Kompas.svg.png" class="h-8 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="">
+          </a>
           </div>
           <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="https://astrolus.netlify.app/images/clients/netflix.svg" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="">
+            <a href="https://www.jawapos.com/features/01428133/harga-lebih-pasti-ubah-sampah-jadi-berkah" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jawa_Pos.png/800px-Jawa_Pos.png" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="">
+            </a>
           </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="https://astrolus.netlify.app/images/clients/google-cloud.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="">
-        </div>
       </div>
     </Container>
   </SectionMuted>
